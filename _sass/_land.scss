@@ -1,0 +1,48 @@
+#landin {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  .vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+
+    img {
+      width: 30vmin;
+
+      &:hover {
+        width: 33vmin;
+      }
+    }
+
+    .social-icons {
+      font-size: 5vmin;
+      margin-top: 3vmin;
+
+      a {
+        color: #6C7A89;
+        margin-right: 0.75vmin;
+      
+        &:hover {
+          color: #EEEEEE;
+        }
+
+      }
+
+    }
+
+  }
+  
+  h1 {
+    color: #EEEEEE;
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+
+.container-fluid {
+    padding: 0;
+  }
+

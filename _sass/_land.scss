@@ -34,7 +34,33 @@
 
     }
 
+  }  
+
+  .navbar-special {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding-bottom: 0;
+    width: 100vw;
+    li{
+      display: inline;
+    }
+
+    li>a {
+      margin-right: 5vw;
+      margin-left: 5vw;
+      font-size: 1.5em;
+      color: #EEEEEE;
+      font-family: 'Shadows Into Light', cursive;
+    
+      &:hover {
+        text-decoration: overline underline;
+        background-color: transparent;
+      }
+    }
   }
+  
   
   h1 {
     color: #EEEEEE;
@@ -44,5 +70,7 @@
 
 .container-fluid {
     padding: 0;
-  }
-
+}
+.row {
+  width: 100vw;
+}

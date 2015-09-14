@@ -1,0 +1,42 @@
+[
+  {
+    name: "Ruby on Rails",
+    skill_percent: 60
+  },
+  {
+    name: "Javascript",
+    skill_percent: 85
+  },
+  {
+    name: "Ruby",
+    skill_percent: 85
+  },
+  {
+    name: "HTML5",
+    skill_percent: 90
+  },
+  {
+    name: "CSS3",
+    skill_percent: 80
+  },
+  {
+    name: "jQuery",
+    skill_percent: 75
+  },
+  {
+    name: "AngularJS",
+    skill_percent: 20
+  },
+  {
+    name: "Jekyll",
+    skill_percent: 80
+  },
+  {
+    name: "Git",
+    skill_percent: 85
+  },
+  {
+    name: "Full-Stack",
+    skill_percent: 70
+  },
+]

@@ -6,22 +6,21 @@ permalink: /projects/
 <div class="container">
   <h1>Projects</h1>
   <div class="col-md-offset-1 col-md-10">
-    
+    {% for project in site.data.projects %}
     <div class="col-md-4">
-      <h3>Ad-vid</h3>
-      <p>Ad-vid is a video advertising platform aimed at increasing brand awareness among users in a unique interactive way.</p>
-      <a href="#myModal1" class="btn btn-lg btn-primary" data-toggle="modal">Read More</a>
-      <div id="myModal1" class="modal fade">
+      <h3>{{project.name}}</h3>
+      <p>{{project.description}}</p>
+      <a href="#myModal{{project.number}}" class="btn btn-lg btn-primary" data-toggle="modal">Read More</a>
+      <div id="myModal{{project.number}}" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="modal-title">My Website</h3>
+              <h3 class="modal-title">{{project.name}}</h3>
             </div>
             <div class="modal-body">
-              <img src="/images/advid_project.png" alt="Calculator">
-              <p>Click <a href="#">here</a> to go to the Ad-vid link.</p>
-              <p>Ad-vid is a video advertising platform aimed at increasing brand awareness among users in a unique interactive way.</p>
+              <img src="../images/{{project.image}}" alt="Calculator">
+              <p>{{project.description}}</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -30,81 +29,7 @@ permalink: /projects/
         </div>
       </div>
     </div>
-
-    <div class="col-md-4">
-      <h3>MathMate</h3>
-      <p>Math-mate is a fully-functional scientific calculator. He can be your best friend in all your computational needs.</p>
-      <a href="#myModal2" class="btn btn-lg btn-primary" data-toggle="modal">Read More</a>
-      <div id="myModal2" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="modal-title">MathMate</h3>
-            </div>
-            <div class="modal-body">
-              <img src="/images/simple_calculator_01.svg.hi.png" alt="Calculator">
-              <p>Click <a href="http://ranganathk.github.io/calci/">here</a> to go to the calculator.</p>
-              <p>Click <a href="https://github.com/ranganathk/calci">here</a> to checkout the calculator code.</p>
-              <p>A cool-looking fully-functional scientific calculator.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <h3>Project Euler</h3>
-      <p>Completed more than 50 problems of the Euler project. Project Euler is a set of mathematical problems that can be solved using coding.</p>
-      <a href="#myModal3" class="btn btn-lg btn-primary" data-toggle="modal">Read More</a>
-      <div id="myModal3" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content"> 
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="modal-title">Project Euler</h3>
-            </div>
-            <div class="modal-body">
-              <img src="/images/euler-project.png" alt="Calculator">
-              <p>Completed more than 50 problems of the Euler project(56 and counting to be precise). Project Euler is a set of mathematical problems that can be solved using coding.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <h3>Nine-word-game</h3>
-      <p>Don't puzzle the puzzle. If you puzzle the puzzle, puzzle puzzles you. I'm not the puzzle, I'm the truth.</p>
-      <a href="#myModal4" class="btn btn-lg btn-primary" data-toggle="modal">Read More</a>
-      <div id="myModal4" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 class="modal-title">Nine-word-game</h3>
-            </div>
-            <div class="modal-body">
-              <img src="/images/nine_word_game.png" alt="Puzzle-game">
-              <p>Click <a href="http://ranganathk.github.io/nine_word_game/">here</a> to go to the puzzle.</p>
-              <p>Click <a href="https://github.com/ranganathk/nine_word_game">here</a> to view the puzzle source code.</p>
-              <p>A word game for all the intellectuals. Think you are very good at unscrambling words, then this puzzle game is for you.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
+    {% endfor %}
   </div>
   
 </div>

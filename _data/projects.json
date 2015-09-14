@@ -1,0 +1,26 @@
+[
+  {
+    name: "Ad-vid",
+    image: "advid_project.png",
+    description: "Ad-vid is a video advertising platform aimed at increasing brand awareness among users in a unique interactive way.",
+    number: 1
+  },
+  {
+    name: "Math-mate",
+    image: "simple_calculator_01.svg.hi.png",
+    description: "Math-mate is a fully-functional scientific calculator. He can be your best friend in all your computational needs.",
+    number: 2
+  },
+  {
+    name: "Project Euler",
+    image: "euler-project.png",
+    description: "Completed more than 50 problems of the Euler project. Project Euler is a set of mathematical problems that can be solved using coding.",
+    number: 3
+  },
+  {
+    name: "Nine-word-game",
+    image: "nine_word_game.png",
+    description: "A word game for all the intellectuals. Think you are very good at unscrambling words, then this puzzle game is for you.",
+    number: 4
+  }
+]
